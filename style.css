@@ -1,0 +1,1006 @@
+body {
+margin: 0;
+background-color: #161616;
+font-family: 'Myriad Pro', sans-serif;
+font-size: 14px;
+-webkit-font-smothing: antialiased;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+    padding: 0;
+    cursor: default;
+}
+
+
+/* Container 
+=============*/
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Header 
+=============*/
+
+.header {
+    position: absolute;
+    z-index: 1000;
+    height: 100%;
+    max-height: 432px;
+    width: 100%;
+}
+
+.header__item {
+    display:flex ;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    color: #fff;
+    padding-top: 120px;
+    padding-bottom: 68px;
+}
+
+.header__tittle {
+    font-size: 202px;
+    font-weight: bold;
+    letter-spacing: -8px;
+    width: 100%;
+    max-width: 730px;
+    margin-left: 36px;
+}
+
+.tittle__yellow {
+    color: #ffc600;
+}
+
+.header__text {
+    font-size: 18px;
+    margin-bottom: 34px;
+    margin-left: 43px;
+    max-width: 431px;
+}
+
+.text__yellow {
+    color: #ffc600;
+}
+
+.header__download {
+    text-decoration: none;
+    color: #ffc600;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: 43px;
+    max-width: 150px;
+    transition: 0.2s linear;
+}
+
+.header__download:hover {
+    color: #fff;
+}
+
+
+
+/* Intro 
+=============*/
+
+
+.intro {
+    position: relative;
+    display: flex;
+    height: 1200px;
+    padding-top: 518px;
+    background: url(img/header__background.jpg) no-repeat center ;
+    background-size: cover;
+}
+
+.intro .container {
+    background: url(img/BF3.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    max-width: 1198px;
+}
+
+.intro__inner {
+    display: flex;
+    width: 100%;
+    max-width: 540px;
+    flex-direction: column;
+    background-size: cover;
+    margin:70px 0 56px 0
+}
+
+.nav {
+    margin-left: 43px;
+}
+
+.intro__tittle {
+    font-size: 50px;
+    margin-left: 45px;
+    width: 420px;
+    color: #fff;
+    margin-bottom: 60px;
+    line-height: 0.9;
+}
+
+.intro__link {
+    color: #ffc600;
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 34px;
+    transition: 0.2s linear;
+    text-decoration: none;
+}
+
+.intro__link:hover {
+    color: #fff;
+}
+
+
+/* About 
+=============*/
+
+.about {
+    display: flex;
+    background-color: #161616;
+    height: 667px;
+}
+
+.about .container {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.about__main {
+    color: #717171;
+    font-size: 30px;
+    line-height: 0.8;
+    position: absolute;
+    left: 72px;
+    top: 72px;
+}
+
+.about__upper {
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.about__lower {
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.about__top {
+    display: flex;
+    height: 320px;
+}
+
+.about__line {
+    border-bottom: 1px solid #c5c5c5;
+}
+
+.right__bottom__text {
+    padding-top: 10px;
+}
+
+.about__right {
+    position: absolute;
+    top: 36px;
+    right: 8px;
+    width: 100%;
+    max-width: 620px;
+    border-left: 1px solid #c5c5c5;
+    padding-left: 20px;                  /* Задаем растояние border слева от текста */
+}
+
+.right__text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.right__bottom__text {
+    font-size: 14px;
+    color: #595959;
+}
+
+.about__bottom {
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+.about__item {
+    font-family: 'Times New Roman', sans-serif;
+    font-weight: 400;
+    width: 33.33333%;
+    text-align: center;
+    padding: 0 45px;
+}
+
+.about__icon {
+    margin-bottom: 24px;
+}
+
+.about__up {
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+
+.about__words {
+    font-size: 10px;
+
+}
+
+.about__words__2 {
+    margin-bottom: 17px;
+}
+
+
+/* Features 
+=============*/
+
+.features {                                          /* Убрали высоту, избавились от проблемы адаптивности при сужении, что бы контент не залазил на соседние блоки */
+    font-family: 'New Times Roman', sans-serif;
+    width: 100%;
+}
+
+.features .container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    position: relative;
+}
+
+.features__top {
+    display: flex;
+    flex-direction: column;
+    padding: 53px 50px 0 50px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 21px;
+}
+
+.features__tittle {
+   font-size: 30px;
+   font-weight: bold;
+}
+
+.features__link {
+    text-decoration: none;
+    color: #000;
+    transition: .2s linear;
+    margin-left: 17px;
+}
+
+.features__link:first-child {
+    margin-left: 0;
+}
+
+.features__link:hover {
+    color: #ffc600;
+    
+}
+
+.features__inner {                        /* Делаем features__inner чтобы сделать его display-flex и перенос строк с помощью flex-wrap: wrap; */ 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features__item {
+    position: relative;
+    width: 25%;
+    overflow: hidden;
+    height: 267px;
+}
+
+.features__item:hover
+.features__content {
+    opacity: 1;
+}
+
+.features__photo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+
+    transform: translate3d(-50%, -50%, 0);
+
+    min-width: 100%;
+}
+
+.features__content {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(255, 198, 0, 0.9);
+    opacity: 0;
+
+    width: 100%;
+    height: 267px;
+    transition: .2s linear;
+}
+
+
+
+/*Testimonials 
+ =============*/
+
+ .testimonials {
+     width: 100%;
+     background-color: #161616;
+ }
+
+.testimonials__about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1100px;
+    padding-top: 55px;    /* Делаем внутренний отступ для контента, если поставим margin, то блок сдвинется и проявится background */   /* Padding этот нужно убрать */
+    margin: 0 auto; 
+}
+
+ .testimonials__inner {
+     background-color: #fff;
+     padding-bottom: 64px;
+ }
+
+ .testimonials__tittle {
+     margin-bottom: 29px;
+ }
+
+ .text__upper {
+     display: block;         /* Делаем text__upper - display:block; так как этот класс есть span(строчним), чтобы потом могли разделить текст на 2 части */
+     margin-bottom: 20px;
+ }
+
+ .testimonials__items {
+     width: 100%;
+     max-width: 860px;
+     display: flex;
+     flex-wrap: wrap;
+     margin: 0 auto;         /* Делаем наш блок по центру этим свойством (padding не подходит, плохо для адаптивности, не сужается до конца) */
+     padding-top: 30px;
+ }
+
+ .testimonials__item {
+     width: 50%;
+     overflow: hidden;
+     position: relative;
+     height: 253.23px;      /* Обязательно задаем высоту блока с фотографией, что бы она не вылазила за блок */
+ }
+
+ .testimonials__item:hover
+ .testimonials__content {
+     opacity: 1;
+ }
+
+ .testimonials__img {
+     height: 100%;          /* Делаем высоту 100% чтобы картинка не уменьшался при адаптации(сужении) */
+     min-width: 100%;       /* Растягивает на весь блок картинку */
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     z-index: 2;
+
+     transform: translate3d(-50%, -50%, 0);
+ }
+
+ .testimonials__item.item__block {         /* Обращаемся к item__block, у этого дива 2 класса, один(.testimonials__item) для айтемов общий, другой(.item__block) для регулировки 3 блоков с записями. */
+    padding: 0 10px ;
+ }
+ 
+ .testimonials__subtittle {
+     font-weight: 600;
+     font-size: 30px;
+     margin-bottom: 40px;
+ }
+
+ .testimonials__tittle__2 {
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 18px;
+ }
+
+ .testimonials__tittle__3 {
+     color: #595959;
+     font-size: 14px;
+ }
+
+ .testimonials__content {
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     z-index: 3;
+     height: 253.23px;
+
+     color: #000;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: rgba(255, 198, 0, 0.9);
+     opacity: 0;
+
+     font-size: 18px;
+
+     transition: .2s linear;
+ }
+
+
+ /*Services 
+ =============*/
+
+
+.services {
+    display: flex;
+    width: 100%;
+    background-color: #161616;
+}
+
+.services__inner {
+    color: #fff;
+    position: relative;
+    width: 100%;
+    height: 478px;
+    background: url(img/Joker.jpg) no-repeat center;   /* Задаем background (не background-image) */
+    background-size: cover;
+}
+
+.services__tittle {
+    padding-top: 30px;
+    padding-left: 50px;
+    font-size: 30px;
+    width: 27%;  
+}
+
+.services__items {
+    position: absolute;
+    top: 80px;
+    right: 185px;
+    bottom: 100px;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.services__item {
+    padding: 20px;
+    width: 50%;
+}
+
+.services__subtittle {
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+
+
+ /*Team
+ =============*/
+
+
+ .team {
+     background-color: #161616;
+ }
+
+ .team__inner {
+     position: relative;
+     height: 588px;
+     background-color: #fff;
+ }
+
+ .team__items {
+     position: absolute;
+     right: 69px;
+     bottom: 153px;
+     display: flex;
+ }
+
+ .team__item {
+     width: 100%;
+     padding: 0 10px;
+     overflow: hidden;
+     height: 186px;
+     position: relative;
+ }
+
+ .team__photo {
+    min-width: 100%;
+ }
+
+ .team__tittle {
+     width: 25%;
+     padding-top: 100px;
+     padding-left: 50px;
+ }
+
+ .text__upper {
+     margin-left: 10px;
+     width: 85%;
+     position: absolute;
+     top: -100px;
+     font-size: 16px;
+     font-style: italic;
+ }
+
+ .team__block {
+     display: block;
+     margin-bottom: 10px;
+ }
+
+ .team__under__block {
+    font-size: 14px;
+    color: #595959;
+ }
+
+
+/*Testimonials Black
+ =============*/
+
+
+.black__inner {
+   height: 419px;
+   background-color: #000;
+   color: #fff;
+ }
+
+.black__tittle {
+    font-size: 30px;
+    padding-top: 56px;
+    padding-left: 50px;
+    margin-bottom: 86px;
+ }
+
+.black__text {
+    display: flex;
+    font-size: 16px;
+}
+
+.black__text__2 {
+    width: 70%;
+    padding: 0 36px;
+}
+
+.team__block {
+    font-style: italic;
+}
+
+.black__img {
+    margin-bottom: 30px;
+}
+
+.black__item {
+    position: relative;
+}
+
+.black__photo {
+    position: absolute;
+    right: 230px;
+    top: -50px;
+    text-align: center;
+}
+
+.black__subtittle {
+margin-top: -18px;
+font-size: 16px;
+
+}
+
+
+/*Blogs
+ =============*/
+
+ .blogs__inner {
+     display: flex;
+     background-color: #fff;
+     padding: 30px 0 115px 0;
+ }
+
+ li {
+     list-style-type: none;             /* Убираем маркеры */
+ }
+
+ .blogs__link {
+     font-size: 18px;
+    color: #000;
+     text-decoration: none;
+     transition: .2s linear;
+ }
+
+ .blogs__link:hover {
+     color: #ffc600;
+ }
+
+ .blogs__tittle {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     width: 25%;
+ }
+
+ .blogs__tittle li {
+    margin-bottom: 30px;
+ }
+
+ .blogs__link__position {
+    margin-top: 50px;
+    margin-left: 40px;
+ }
+
+ .blogs__name {
+     margin-bottom: 30px;
+     margin-left: -30px;
+     font-size: 30px;
+ }
+
+ .blogs__items {
+     display: flex;
+     justify-content: center;
+     width: 100%;
+ }
+
+ .blogs__item {
+    overflow: hidden;
+    padding: 40px;
+    width: 30%;
+ }
+
+ .blogs__photo {
+    min-width: 100%;
+    text-align: center;
+ }
+
+ .blogs__block {
+    text-align: left;
+ }
+
+ .photo__tittle {
+     color: #ffc600;
+     font-size: 18px;
+     margin-top: 10px;
+ }
+
+ .photo__subtittle {
+     font-weight: bold;
+     font-size: 15px;
+     margin-top: 23px;
+ }
+
+ .photo__text {
+     font-size: 12px;
+     font-style: italic;
+     margin-top: 19px;
+     line-height: 1.2;
+ }
+
+
+
+/*Footer
+ =============*/
+
+ .footer {
+     width: 100%;
+ }
+
+.footer .container {
+    background-color: #fff;
+    padding-bottom: 50px;
+}
+
+ .footer__inner {
+     color: #fff;
+     display: flex;
+     background-color: #2046b3;
+ }
+
+ .footer__map {
+    width: 35.7%;
+    overflow: hidden;
+ }
+
+ .footer__img {
+    min-width: 100%;
+    height: 100%;
+ }
+
+ .footer__contacts {
+    width: 50%;
+    max-width: 412px;
+    padding: 0 76px;
+    margin-top: 53px;
+ }
+
+ .contacts__tittle {
+     margin-left: 30px;
+     display: inline-block;             /* Что бы border-bottom был только лишь под буквами и не вылазил за пределы */
+     font-weight: bold;
+     font-size: 30px;
+     margin-bottom: 29px;
+     border-bottom: 2px solid #c5c5c5;
+ }
+
+ .footer__inputs {
+     padding: 9px 0;
+     width: 100%;
+     max-width: 412px;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .footer__name__in {
+    border: 2px solid #c5c5c5;
+    background-color: transparent;
+    width: 412px;
+ }
+
+.footer__mobile__in {
+    background-color: transparent;
+    border: 2px solid #c5c5c5;
+
+}
+
+.footer__email__in {
+    background-color: transparent;
+    border: 2px solid #c5c5c5;
+    margin-left: 58px;
+}
+
+ textarea {
+    outline: none;
+     background-color: transparent;
+     border: 2px solid #c5c5c5;
+     width: 412px;
+     max-width: 412px;
+     height: 76px;
+     resize: none;
+     color: #fff;
+     font-size: 14px;
+ }
+
+ input {
+     outline: none;               /* outline: none; - Убирает границы при фокусе вокруг текстового поля */
+     color: #fff;
+     height: 30px;
+     border: none;
+     border-radius: 5px;
+ }
+
+ input:focus {
+     transition: .2s linear;
+     border: 2px solid rgba(0, 0, 0, 0.5);
+     border-radius: 10px;
+     background-color: #fff;
+     color: #000;
+ }
+
+ textarea:focus {
+    transition: .2s linear;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+ }
+
+ .btn {
+    margin-top: 22px;
+    margin-bottom: 60px;
+ }
+
+ .btn--clr {
+    width: 100%;
+    max-width: 108px;
+    height: 33px;
+    color: #fff;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    border: 1px solid #fff;                /* Убираем стандартные границы у кнопки */
+    border-radius: 10px;
+    cursor: pointer;             /* А также отображаем курсор в виде руки при наведении */
+    transition: .2s linear;
+    text-align: center;
+ }
+
+ .btn--clr:hover {
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+ }
+
+ .footer__location {
+     font-weight: bold;
+     font-size: 18px;
+    margin-bottom: 39px;
+ }
+
+ .footer__adress {
+    width: 120%;
+    margin-bottom: 39px;
+ }
+
+ .footer__phone {
+    margin-bottom: 39px;
+ }
+ .footer__email {
+    margin-bottom: 39px;
+ }
+
+ .footer__text__1 {
+    font-weight: 400;
+ }
+
+ .footer__text__2 {
+    font-weight: 400;
+ }
+
+ .footer__text__3 {
+    font-weight: 400;
+ }
+
+ .footer__line {
+     width: 412px;
+     height: 630px;
+     border-bottom: 2px solid rgba(115, 134, 188, 0.5);
+ }
+
+.footer__items {
+    margin-top: 5px;
+    display: flex;
+}
+
+.footer__item {
+    display: flex;                                      /* Делаем наш fiiter__item display__flex */
+    justify-content: center;                            /* Выравниваем по горизонтали */
+    align-items: center;                                /* Выравниваем по вертикали */
+    border: 1px solid #fff;   
+    margin-right: 5px;
+    width: 35px;                                        /* Размеры item'a */
+    height: 35px;
+    transition: .2s linear;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+ }
+
+.footer__icon {
+    display: block;                                     /* Делаем иконку display:block;*/
+    fill: #fff;                                       /* Свойство fill заполняет каким-либо цветом SVG-форму, наши иконки */
+    height: 25px;                                       /* Задаем размер иконок */
+ }
+
+ .footer__item:hover {
+     border: 1px solid #000;
+     border-radius: 20px;
+     background-color: rgba(255, 255, 255, 0.5);
+ }
+
+ .footer__item:hover .footer__icon{
+    fill: #000;
+ }
+
+
+/*Sublime
+ =============*/
+
+.sublime .container {
+    background-color: #fff;
+    padding-bottom: 30px;
+}
+
+ .sublime__inner {
+     display: flex;
+     width: 100%;
+     max-width: 1200px;
+     height: 654px;
+     background-color: #fff;
+     color: #fff;
+ }
+
+ .sublime__tittle {
+     margin-top: 45px;
+     padding: 0 40px;
+ }
+
+ .sublime__menu {
+     width: 100%;
+     height: 100%;
+     max-width: 321px;
+     background-color: #000;
+ }
+
+ .sublime__subtittle {
+     font-size: 60px;
+     margin-bottom: 60px;
+ }
+
+ .sublime__nav {
+     margin-left: -40px;
+     font-size: 16px;
+ }
+
+ .sublime__nav .footer__items {
+     padding: 0 40px;
+ }
+
+ .sublime__nav .footer__item:hover {
+     background-color: #fff;
+ }
+
+.sublime__link {
+    text-decoration: none;
+    color: #fff;
+    transition: .2s linear;
+ }
+
+ .sublime__link:hover {
+    color: #ffc600;
+ }
+
+.sublime__sublink {
+    margin-bottom: 24px;
+ }
+
+ .sublime__sublink:last-child {
+     margin-bottom: 50px;
+ }
+
+ .sublime__ul::after {
+     display: block;
+     content: "";
+     width: 115px;
+     height: 2px;
+     background-color: rgba(255, 198, 0, 0.9);
+ }
+
+ .sublime__photo {
+     width: 100%;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .sublime__img {
+     min-width: 100%;
+     position: absolute;
+     opacity: 1;
+     background-size: cover;
+     background: rgba(0, 0, 0, 0.5);
+     transition: .3s linear;
+ }
+
+ .sublime__img:hover {
+    opacity: 0.8;
+ }
+
+ .sublime__text {
+     position: absolute;
+     bottom: 126px;
+     left: 20px;
+     width: 100%;
+     font-size: 100px;
+     line-height: 0.8;
+     font-weight: bold;
+ }

@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+}
+
+.wrapper { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-auto-rows: 100px; 
+}
+
+.wrapper div {
+    background-color: rgba(148, 243, 255, 0.5);
+}
+
+.box {
+text-align: center;
+}
